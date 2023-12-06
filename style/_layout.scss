@@ -1,0 +1,36 @@
+@use 'variables' as var;
+
+.hero,
+header,
+footer {
+  background: var.$background-dark;
+  color: white;
+}
+
+.quote {
+  background: var.$background-quote;
+}
+
+header {
+  color: var.$text-highlight;
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    font: {
+      size: 24px;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.hero {
+  color: var.$text-highlight;
+  font: {
+    size: 48px;
+    weight: 900;
+  }
+}
