@@ -22,7 +22,7 @@ header {
   padding: {
     top: var.$padding-body/4;
     bottom: var.$padding-body/4;;
-  };
+  }
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -34,5 +34,31 @@ header {
   }
   .signup {
     margin-top: 2rem;
+  }
+}
+
+.info {
+  h1 {
+    text-align: center;
+  }
+  padding: {
+    top: var.$padding-body/4;
+    bottom: var.$padding-body/4;;
+  }
+}
+
+.info-boxes {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  img {
+    object-fit: cover;
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 1rem;
+    border: 5px solid var.$background-quote;
+    border-radius: 10px;
   }
 }
