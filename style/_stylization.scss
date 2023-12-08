@@ -1,0 +1,63 @@
+@use 'variables' as var;
+
+.hero,
+header,
+footer {
+  background: var.$background-dark;
+  color: white;
+}
+
+a {
+  color: var.$text-highlight;
+}
+
+.signup {
+  padding: .8rem;
+  width: 5rem;
+  border-radius: 12px;
+  background-color: var.$clickable;
+  display: block;
+  text-align: center;
+}
+
+.quote {
+  background: var.$background-quote;
+  :first-child {
+    font: {
+      size: 36px;
+      weight: 400;
+      style: italic;
+    }
+  }
+  font-weight: bold;
+}
+
+header {
+  color: var.$text-highlight;
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    font: {
+      size: 24px;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.hero {
+  color: var.$text-highlight;
+  h1 {
+    font: {
+      size: 48px;
+      weight: 900;
+    }
+  }
+  p {
+    color: var.$text-highlight-dim;
+    font-size: 18px;
+  }
+}

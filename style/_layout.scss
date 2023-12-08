@@ -1,36 +1,38 @@
 @use 'variables' as var;
 
-.hero,
-header,
-footer {
-  background: var.$background-dark;
-  color: white;
+body {
+  display: flex;
+  flex-direction: column;
 }
 
-.quote {
-  background: var.$background-quote;
+header,
+.hero,
+.info,
+.quote,
+.action-call,
+footer {
+  padding: 0 var.$padding-body;
 }
 
 header {
-  color: var.$text-highlight;
-  display: flex;
-  justify-content: space-between;
-  h1 {
-    font: {
-      size: 24px;
-    }
-  }
-
-  ul {
-    display: flex;
-    gap: 1rem;
-  }
+  padding-top: 1rem;
 }
 
 .hero {
-  color: var.$text-highlight;
-  font: {
-    size: 48px;
-    weight: 900;
+  padding: {
+    top: var.$padding-body/4;
+    bottom: var.$padding-body/4;;
+  };
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  h1 {
+    margin-bottom: 1rem;
+  }
+  img {
+    width: 70%;
+  }
+  .signup {
+    margin-top: 2rem;
   }
 }

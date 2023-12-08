@@ -15,8 +15,17 @@ h1 {
   margin: 0;
 }
 
-p, h1 {
-  padding: 1rem;
+p {
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 .hero,
@@ -26,8 +35,27 @@ footer {
   color: white;
 }
 
+a {
+  color: #f9faf8;
+}
+
+.signup {
+  padding: 0.8rem;
+  width: 5rem;
+  border-radius: 12px;
+  background-color: rgb(230, 132, 243);
+  display: block;
+  text-align: center;
+}
+
 .quote {
   background: rgb(227, 196, 248);
+  font-weight: bold;
+}
+.quote :first-child {
+  font-size: 36px;
+  font-weight: 400;
+  font-style: italic;
 }
 
 header {
@@ -45,6 +73,47 @@ header ul {
 
 .hero {
   color: #f9faf8;
+}
+.hero h1 {
   font-size: 48px;
   font-weight: 900;
+}
+.hero p {
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+.hero,
+.info,
+.quote,
+.action-call,
+footer {
+  padding: 0 20rem;
+}
+
+header {
+  padding-top: 1rem;
+}
+
+.hero {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.hero h1 {
+  margin-bottom: 1rem;
+}
+.hero img {
+  width: 70%;
+}
+.hero .signup {
+  margin-top: 2rem;
 }/*# sourceMappingURL=style.css.map */
