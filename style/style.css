@@ -83,6 +83,10 @@ header ul {
   font-size: 18px;
 }
 
+.action-box {
+  background: rgb(230, 132, 243);
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -150,6 +154,22 @@ header {
 .quote :last-child {
   font-size: 1.2rem;
   text-align: right;
+}
+
+.action-call {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.action-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  color: #f9faf8;
+}
+.action-box .signup {
+  border: 3px solid #f9faf8;
 }
 
 footer {

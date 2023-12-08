@@ -72,6 +72,21 @@ header {
   }
 }
 
+.action-call {
+  @include top-bot-padding();
+}
+
+.action-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  color: var.$text-highlight;
+  .signup {
+    border: 3px solid var.$text-highlight;
+  }
+}
+
 footer {
   padding: {
     top: var.$padding-general;
