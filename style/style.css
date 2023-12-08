@@ -46,6 +46,11 @@ a {
   background-color: rgb(230, 132, 243);
   display: block;
   text-align: center;
+  transition: background-color 0.2s, color 0.2s;
+}
+.signup:hover {
+  background-color: #f9faf8;
+  color: rgb(230, 132, 243);
 }
 
 .quote {
