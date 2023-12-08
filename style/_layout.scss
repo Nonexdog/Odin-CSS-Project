@@ -1,5 +1,12 @@
 @use 'variables' as var;
 
+@mixin top-bot-padding {
+  padding: {
+    top: var.$padding-body/4;
+    bottom: var.$padding-body/4;;
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -19,10 +26,7 @@ header {
 }
 
 .hero {
-  padding: {
-    top: var.$padding-body/4;
-    bottom: var.$padding-body/4;;
-  }
+  @include top-bot-padding();
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -38,12 +42,9 @@ header {
 }
 
 .info {
+  @include top-bot-padding();
   h1 {
     text-align: center;
-  }
-  padding: {
-    top: var.$padding-body/4;
-    bottom: var.$padding-body/4;;
   }
 }
 
@@ -60,5 +61,16 @@ header {
     margin-bottom: 1rem;
     border: 5px solid var.$background-quote;
     border-radius: 10px;
+  }
+}
+
+.quote {
+  @include top-bot-padding();
+}
+
+footer {
+  padding: {
+    top: var.$padding-general;
+    bottom: var.$padding-general;
   }
 }

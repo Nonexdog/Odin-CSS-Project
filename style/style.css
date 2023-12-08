@@ -141,4 +141,14 @@ header {
   margin-bottom: 1rem;
   border: 5px solid rgb(227, 196, 248);
   border-radius: 10px;
+}
+
+.quote {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */
