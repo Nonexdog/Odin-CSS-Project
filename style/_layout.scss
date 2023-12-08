@@ -3,7 +3,7 @@
 @mixin top-bot-padding {
   padding: {
     top: var.$padding-body/4;
-    bottom: var.$padding-body/4;;
+    bottom: var.$padding-body/4;
   }
 }
 
@@ -66,6 +66,10 @@ header {
 
 .quote {
   @include top-bot-padding();
+  :last-child {
+    font-size: 1.2rem;
+    text-align: right;
+  }
 }
 
 footer {

@@ -147,6 +147,10 @@ header {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+.quote :last-child {
+  font-size: 1.2rem;
+  text-align: right;
+}
 
 footer {
   padding-top: 1rem;
